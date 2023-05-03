@@ -1,0 +1,28 @@
+.box-sizing {
+    box-sizing: border-box;
+}
+
+.difficultySetting {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+}
+
+.squares {
+    box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-color: black;
+}
+
