@@ -1,28 +1,52 @@
-.box-sizing {
+.container {
     box-sizing: border-box;
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: space-between;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    gap: 12px;
 }
 
 .difficultySetting {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-flow: column wrap;
-}
-
-.squares {
-    box-sizing: border-box;
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    margin: 20px;
-    grid-gap: 5px;
     justify-content: center;
     align-items: center;
 }
 
-.square {
-    height: 50px;
-    width: 50px;
-    background-color: black;
-    border-color: black;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.button-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.square {
+    width: clamp(10px, 75px, 100px);
+    height: clamp(10px, 75px, 100px);
+}
+
+
+
+
+
+
+
 

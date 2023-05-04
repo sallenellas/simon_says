@@ -6,20 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simon Says</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
   </head>
-  <body class="box-sizing">
-    <div class="difficultySetting">
-        <label for="easy">Easy</label>
-        <input type="radio" name="difficulty" id="easy" value="3">
-        <label for="medium">Medium</label>
-        <input type="radio" name="difficulty" id="medium" value="4">
-        <label for="hard">Hard</label>
-        <input type="radio" name="difficulty" id="hard" value="5">
-    </div>
-    <div>
-        <button type="button" id="play" name="playButton">Generate</button>
+  <body>
+    <div class="container">
+
+      <div class="options">
+        <div class="difficultySetting">
+            <div>
+              <label for="easy">Easy</label>
+              <input type="radio" name="difficulty" id="easy" value="3">
+            </div>
+            <div>
+              <label for="medium">Medium</label>
+              <input type="radio" name="difficulty" id="medium" value="4">
+            </div>
+            <div>
+              <label for="hard">Hard</label>
+              <input type="radio" name="difficulty" id="hard" value="5">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="play" name="playButton">Generate</button>
+        </div>
+      </div>
+
+      <div class="button-grid" id="button-grid"></div>
+
     </div>
 
-	<script src="scripts.js"></script>
   </body>
 </html>
